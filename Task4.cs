@@ -10,21 +10,24 @@ using System.Windows.Forms;
 
 namespace Topic4
 {
-    public partial class Task1 : Form
+    public partial class Task4 : Form
     {
-        public Task1()
+        public Task4()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int num = int.Parse(textBox1.Text), sum = 0;
-            for (int i = 0; i <= num; i++)
+            int num = int.Parse(textBox1.Text);
+            for (int i = 1; i <= num; i++)
             {
-                sum += i;
+                for (int j = 0; j < i; j++)
+                {
+                    label1.Text += "*";
+                }
+                label1.Text += "\n";
             }
-            MessageBox.Show("The Sum is = " + sum);
         }
     }
 }
