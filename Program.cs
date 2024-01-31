@@ -16,7 +16,7 @@ namespace Topic4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Task6());
+            Application.Run(new Task7());
         }
     }
 }
